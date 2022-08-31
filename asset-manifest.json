@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/stargo/static/css/main.23284b97.css",
+    "main.js": "/stargo/static/js/main.83ce79f6.js",
+    "index.html": "/stargo/index.html",
+    "main.23284b97.css.map": "/stargo/static/css/main.23284b97.css.map",
+    "main.83ce79f6.js.map": "/stargo/static/js/main.83ce79f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23284b97.css",
+    "static/js/main.83ce79f6.js"
+  ]
+}
