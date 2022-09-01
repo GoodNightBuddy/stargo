@@ -1,5 +1,5 @@
 export const customFetch = async (URI: string, method: string = 'GET') => {
-  const response = await fetch(`http://opn-interview-service.nn.r.appspot.com/${URI}`, {
+  const response = await fetch(`https://opn-interview-service.nn.r.appspot.com/${URI}`, {
     method: method,
     headers: {
       "Authorization": `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`
