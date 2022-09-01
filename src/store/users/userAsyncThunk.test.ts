@@ -6,7 +6,7 @@ describe('userThunk', () => {
     const dispatch = jest.fn();
     const thunk = getUsers();
 
-    await thunk(dispatch);
+    // await thunk(dispatch);
 
     const {calls } = dispatch.mock;
     expect(calls).toHaveLength(2);

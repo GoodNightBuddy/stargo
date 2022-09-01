@@ -1,20 +1,28 @@
 # Test task for starGo
 
 ● On main screen app shows list of people by listing only the first name
+
 ● On tapping on a list item show the profile view that displays: first name, last name, age,
 gender and country
 
 At the first load, application make request(fetch) to the API and recieved the list of users id's. Then simultaneously makes requests for each id. When all promises dones, it filters all successes requests and display recieved users.
 
+Sometimes, API does not send response with users id-list. In that case displayed alert with a hint.
+
 
 API: 
 ● API calls must use JWT authorization bearer using HMAC 256 and base64-encoded
 secret: "$SECRET$"
+
 ● Example of JWT token that works:
+
 ● The JWT payload should include an object with two properties "uid" and "identity" with
 any values
+
 ● API domain: http://opn-interview-service.nn.r.appspot.com
+
 ● API call for listing of people ids: GET: /list
+
 ● API call for getting Detailed Profile: GET: /get/{id} where {id} is the id of the profile you
 get back from the list.
 
