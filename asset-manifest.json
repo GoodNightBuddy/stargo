@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/stargo/static/css/main.23284b97.css",
-    "main.js": "/stargo/static/js/main.83ce79f6.js",
+    "main.css": "/stargo/static/css/main.407abf1e.css",
+    "main.js": "/stargo/static/js/main.f64d02cd.js",
     "index.html": "/stargo/index.html",
-    "main.23284b97.css.map": "/stargo/static/css/main.23284b97.css.map",
-    "main.83ce79f6.js.map": "/stargo/static/js/main.83ce79f6.js.map"
+    "main.407abf1e.css.map": "/stargo/static/css/main.407abf1e.css.map",
+    "main.f64d02cd.js.map": "/stargo/static/js/main.f64d02cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.23284b97.css",
-    "static/js/main.83ce79f6.js"
+    "static/css/main.407abf1e.css",
+    "static/js/main.f64d02cd.js"
   ]
 }
