@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stargo/static/css/main.7acf39d5.css",
-    "main.js": "/stargo/static/js/main.1122769e.js",
+    "main.js": "/stargo/static/js/main.fe11eb4d.js",
     "index.html": "/stargo/index.html",
     "main.7acf39d5.css.map": "/stargo/static/css/main.7acf39d5.css.map",
-    "main.1122769e.js.map": "/stargo/static/js/main.1122769e.js.map"
+    "main.fe11eb4d.js.map": "/stargo/static/js/main.fe11eb4d.js.map"
   },
   "entrypoints": [
     "static/css/main.7acf39d5.css",
-    "static/js/main.1122769e.js"
+    "static/js/main.fe11eb4d.js"
   ]
 }
