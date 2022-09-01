@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     dispatch(getUsers());
   }, []);
-
+  
 
   if(isLoading) {
     return <Loader />
@@ -24,7 +24,6 @@ function App() {
 
   return (
     <Accordion className="mx-auto p-4 container">
-      
       {users.map(user => <AccordionItem user={user} key={user.id}/>)}
     </Accordion>
   );

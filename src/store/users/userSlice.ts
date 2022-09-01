@@ -1,25 +1,14 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import { fetchIdList, fetchUsers } from './helpers/userFetch';
+import { IUser, IUserState } from './types';
 
-export interface IUser {
-  age: number;
-  country: string;
-  firstName: string;
-  gender: string;
-  id: string;
-  lastName: string
-}
-
-export interface IUserState {
-  users: IUser[];
-  isLoading: boolean;
-}
 
 const initialState: IUserState = {
   users: [],
   isLoading: false
 };
+
 
 export const getUsers = createAsyncThunk(
   'users/getUsers',

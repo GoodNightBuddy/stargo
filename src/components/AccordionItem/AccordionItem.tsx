@@ -1,12 +1,13 @@
 import React, { FC } from 'react';
 import { Accordion } from 'react-bootstrap';
-import { IUser } from '../../store/users/userSlice';
+import { IUser } from '../../store/users/types';
 
 interface IAccordionItemProps {
   user: IUser
 }
 
 const AccordionItem: FC<IAccordionItemProps> = (props) => {
+
   return (
     <Accordion.Item eventKey={props.user.id}>
       <Accordion.Header>{props.user.firstName}</Accordion.Header>
