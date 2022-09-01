@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { RootState} from '../../app/store';
-import { fetchIdList, fetchUsers } from './userFetch';
+import { RootState } from '../store';
+import { fetchIdList, fetchUsers } from './helpers/userFetch';
 
-export interface User {
+export interface IUser {
   age: number;
   country: string;
   firstName: string;
@@ -11,12 +11,12 @@ export interface User {
   lastName: string
 }
 
-export interface UserState {
-  users: User[];
+export interface IUserState {
+  users: IUser[];
   isLoading: boolean;
 }
 
-const initialState: UserState = {
+const initialState: IUserState = {
   users: [],
   isLoading: false
 };
@@ -24,7 +24,7 @@ const initialState: UserState = {
 export const getUsers = createAsyncThunk(
   'users/getUsers',
   async () => {
-    const users: User[] = [];
+    const users: IUser[] = [];
 
     const response = await fetchIdList();
     const results = await fetchUsers(response.data);
@@ -36,8 +36,6 @@ export const getUsers = createAsyncThunk(
         }
       }
     })
-
-    console.log(users)
 
     return users
   }
